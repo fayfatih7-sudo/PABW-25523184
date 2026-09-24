@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Koleksi Buku Saya</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>Koleksi Buku Saya</h1>
+
+        <p>
+            Halaman ini berisi koleksi buku yang pernah saya baca,
+            sedang saya baca, atau ingin saya baca.
+        </p>
+
+        <!-- NAVIGASI -->
+        <nav aria-label="Navigasi utama">
+
+            <ul>
+
+                <li>
+                    <a href="#daftar-buku">
+                        Daftar Buku
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#tambah-buku">
+                        Tambah Buku
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#tentang-saya">
+                        Tentang Saya
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- KONTEN UTAMA -->
+    <main>
+
+
+        <!-- ============================= -->
+        <!-- SECTION 1 : DAFTAR BUKU -->
+        <!-- ============================= -->
+
+        <section id="daftar-buku">
+
+            <h2>Daftar Buku</h2>
+
+            <p>
+                Berikut adalah beberapa buku yang ada dalam koleksi
+                dan pernah saya baca.
+            </p>
+
+
+            <!-- TABEL BUKU -->
+
+            <table border="1">
+
+                <caption>
+                    Daftar Buku yang Saya Miliki
+                </caption>
+
+
+                <thead>
+
+                    <tr>
+
+                        <th scope="col">
+                            Judul Buku
+                        </th>
+
+                        <th scope="col">
+                            Penulis
+                        </th>
+
+                        <th scope="col">
+                            Tahun Terbit
+                        </th>
+
+                        <th scope="col">
+                            Status Baca
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+
+                    <!-- BUKU 1 -->
+
+                    <tr>
+
+                        <th scope="row">
+                            Laskar Pelangi
+                        </th>
+
+                        <td>
+                            Andrea Hirata
+                        </td>
+
+                        <td>
+                            2005
+                        </td>
+
+                        <td>
+                            Selesai
+                        </td>
+
+                    </tr>
+
+
+                    <!-- BUKU 2 -->
+
+                    <tr>
+
+                        <th scope="row">
+                            Bumi
+                        </th>
+
+                        <td>
+                            Tere Liye
+                        </td>
+
+                        <td>
+                            2014
+                        </td>
+
+                        <td>
+                            Selesai
+                        </td>
+
+                    </tr>
+
+
+                    <!-- BUKU 3 -->
+
+                    <tr>
+
+                        <th scope="row">
+                            Negeri 5 Menara
+                        </th>
+
+                        <td>
+                            Ahmad Fuadi
+                        </td>
+
+                        <td>
+                            2009
+                        </td>
+
+                        <td>
+                            Sedang Dibaca
+                        </td>
+
+                    </tr>
+
+
+                    <!-- BUKU 4 -->
+
+                    <tr>
+
+                        <th scope="row">
+                            Filosofi Teras
+                        </th>
+
+                        <td>
+                            Henry Manampiring
+                        </td>
+
+                        <td>
+                            2018
+                        </td>
+
+                        <td>
+                            Belum Dibaca
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+
+            <!-- ============================= -->
+            <!-- GAMBAR KOLEKSI BUKU -->
+            <!-- ============================= -->
+
+            <figure>
+
+                <img
+                    src="Foto Buku/image.png"
+                    alt="Koleksi buku yang tersusun di atas meja"
+                    width="640"
+                    loading="lazy"
+                >
+
+                <figcaption>
+                    Koleksi buku yang saya miliki.
+                </figcaption>
+
+            </figure>
+
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- SECTION 2 : TAMBAH BUKU -->
+        <!-- ============================= -->
+
+        <section id="tambah-buku">
+
+            <h2>
+                Tambah Buku
+            </h2>
+
+
+            <p>
+                Gunakan form berikut untuk menambahkan buku
+                ke dalam daftar koleksi.
+            </p>
+
+
+            <form
+                action="/simpan"
+                method="post"
+            >
+
+
+                <!-- JUDUL BUKU -->
+
+                <p>
+
+                    <label for="judul-buku">
+                        Judul Buku
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="text"
+                        id="judul-buku"
+                        name="judul-buku"
+                        required
+                    >
+
+                </p>
+
+
+
+                <!-- PENULIS -->
+
+                <p>
+
+                    <label for="penulis">
+                        Penulis
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="text"
+                        id="penulis"
+                        name="penulis"
+                        required
+                    >
+
+                </p>
+
+
+
+                <!-- TAHUN TERBIT -->
+
+                <p>
+
+                    <label for="tahun-terbit">
+                        Tahun Terbit
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="number"
+                        id="tahun-terbit"
+                        name="tahun-terbit"
+                        min="1900"
+                        max="2026"
+                        required
+                    >
+
+                </p>
+
+
+
+                <!-- STATUS BACA -->
+
+                <p>
+
+                    <label for="status-baca">
+                        Status Baca
+                    </label>
+
+                    <br>
+
+                    <select
+                        id="status-baca"
+                        name="status-baca"
+                    >
+
+                        <option value="belum">
+                            Belum Dibaca
+                        </option>
+
+                        <option value="sedang">
+                            Sedang Dibaca
+                        </option>
+
+                        <option value="selesai">
+                            Selesai
+                        </option>
+
+                    </select>
+
+                </p>
+
+
+
+                <!-- TOMBOL -->
+
+                <p>
+
+                    <button type="submit">
+                        Simpan Buku
+                    </button>
+
+                </p>
+
+
+            </form>
+
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- SECTION 3 : TENTANG SAYA -->
+        <!-- ============================= -->
+
+        <section id="tentang-saya">
+
+            <h2>
+                Tentang Saya
+            </h2>
+
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ============================= -->
+    <!-- FOOTER -->
+    <!-- ============================= -->
+
+    <footer>
+
+        <p>
+            Fathin Dhaifullah · 25523184 · 2026
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
