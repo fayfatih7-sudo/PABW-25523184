@@ -1,18 +1,15 @@
-## Getting Started
+## Pertemuan 3 — Halaman profil saya
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Topik halaman saya: koleksi buku yang saya baca.
 
-## Folder Structure
+- Judul halaman: Koleksi Buku Saya
+- Deskripsi: halaman yang berisi daftar buku yang pernah saya baca dan dapat digunakan untuk menambahkan data buku baru.
+- Tautan navigasi: Daftar Buku, Tambah Buku, Tentang Saya
+- Dua bagian utama: Daftar Buku, Tambah Buku
+- Kolom tabel: Judul Buku, Penulis, Tahun Terbit, Status Baca
+- Kolom form: Judul Buku, Penulis, Tahun Terbit
+- Gambar: koleksi-buku.webp
 
-The workspace contains two folders by default, where:
+## Catatan penggunaan AI
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Bagian struktur HTML, contoh tabel, form, dan penulisan kode dibantu oleh AI. Penentuan topik, data buku, serta penyesuaian isi halaman dikerjakan sendiri.
